@@ -1,0 +1,37 @@
+[
+ {
+   "id": 1,
+   "name": "Jilani",
+   "phone": "123456",
+   "email": "jilani@gmail.com",
+   "address": "Mumbai"
+ },
+ {
+   "id": 2,
+   "name": "John",
+   "phone": "876543",
+   "email": "john@gmail.com",
+   "address": "New York"
+ },
+ {
+   "id": 3,
+   "name": "Peter",
+   "phone": "8750983",
+   "email": "peter@gmail.com",
+   "address": "London"
+ },
+ {
+   "id": 4,
+   "name": "Jonas",
+   "phone": "453235",
+   "email": "jonas@gmail.com",
+   "address": "Netherland"
+ },
+ {
+   "id": 5,
+   "name": "Adam",
+   "phone": "980235",
+   "email": "adam@gmail.com",
+   "address": "Tokyo"
+ }
+]
