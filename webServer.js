@@ -2,26 +2,23 @@
 ///////////////////////////////////////////////// CREATING WEBSERVER AND LISTENING IT ON PORT 8000
 ///////////////////////////////////////////////// HANDLING ROUTING
 ////////////////////////////////////////////////  BUILDING API
-/// . IT BASICALLY CURRENT WORKING DIRECTORY (EG. node-basic-learning)
-/// __dirname TRANSLATE TO THE DIRECTORY IN WHICH SCRIPT THAT WE ARE CURRENTLY EXECUTING IS LOCATED.
+/// . --> IT BASICALLY CURRENT WORKING DIRECTORY (EG. node-basic-learning)
+/// __dirname --> TRANSLATE TO THE DIRECTORY IN WHICH SCRIPT THAT WE ARE CURRENTLY EXECUTING IS LOCATED.
 
-const http = require('http');
+const http =  require('http');
 const fs = require('fs');
 
 const data = fs.readFileSync(`${__dirname}/api-data/data.json`, 'utf-8');
     // console.log(data)
     // Parsing json data into javascript but not send as response because it is a javascript object.
-    // we send response only as string.
+    // we send response only as string(json string).
     // const dataObj = JSON.parse(data);
     // console.log(dataObj)
-
-  // Creating web server
-  const server = http.createServer((req,res)=>{
+    // Creating web server
+  const server = http.createServer((req, res)=>{
     // console.log(req);
   const pathName = req.url;
-
-  ////////////////////////////////////////
-  //////////////ROUTING
+    //////////////ROUTING
    if(pathName === '/' || pathName === '/overview')
        res.end('This Overview page');
    else if(pathName === '/product')
@@ -47,3 +44,18 @@ const data = fs.readFileSync(`${__dirname}/api-data/data.json`, 'utf-8');
 server.listen(8000, "127.0.0.1", ()=>{
     console.log("Listening to request on port 8000")
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
